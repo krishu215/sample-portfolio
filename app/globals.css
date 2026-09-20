@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --background: #04050b;
+  --foreground: #f6f7fb;
+  --muted: #9ea3b2;
+  --lime: #b7ff62;
+  --cyan: #6ce8ff;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+}
+
+::selection {
+  background: var(--lime);
+  color: #020305;
+}
+
+.site-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.055);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow:
+    0 16px 64px rgba(2, 4, 12, 0.45),
+    inset 0 1px rgba(255, 255, 255, 0.16);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.text-gradient {
+  background: linear-gradient(100deg, #fff 6%, var(--lime) 52%, var(--cyan) 94%);
+  background-clip: text;
+  color: transparent;
+}
+
+.section-label {
+  color: var(--lime);
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
